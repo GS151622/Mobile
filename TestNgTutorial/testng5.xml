@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="URL" value="www.google.com" />
+  
+  <test name="ParametersTest">
+    <classes>
+      <class name="Test.day5" />
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="ParametersTest2">
+  	<parameter name="URL" value="www.gmail.com" />
+  	<parameter name="APIKey" value="ABc123456" />
+    <classes>
+      <class name="Test.day5" />
+      <class name="Test.day6" />
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

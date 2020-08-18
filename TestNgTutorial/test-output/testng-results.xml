@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="3" total="9" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="368" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:33 PDT">
+    <groups>
+      <group name="Smoke">
+        <method signature="day1.Demo()[pri:0, instance:Test.day1@71423665]" name="Demo" class="Test.day1"/>
+        <method signature="day2.PersonalLoan()[pri:0, instance:Test.day2@2ac273d3]" name="PersonalLoan" class="Test.day2"/>
+        <method signature="day3.WebLoginCarLoan()[pri:0, instance:Test.day3@5bc79255]" name="WebLoginCarLoan" class="Test.day3"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Car Loan" duration-ms="167" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+      <class name="Test.day3">
+        <test-method status="PASS" signature="BFClass()[pri:0, instance:Test.day3@5bc79255]" name="BFClass" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BFClass -->
+        <test-method status="PASS" signature="BeforeEveryMethod()[pri:0, instance:Test.day3@5bc79255]" name="BeforeEveryMethod" is-config="true" duration-ms="0" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method status="PASS" signature="LoginAPICarLoan()[pri:0, instance:Test.day3@5bc79255]" name="LoginAPICarLoan" duration-ms="18" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method status="PASS" signature="AfterEveryMethod()[pri:0, instance:Test.day3@5bc79255]" name="AfterEveryMethod" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method status="PASS" signature="BeforeEveryMethod()[pri:0, instance:Test.day3@5bc79255]" name="BeforeEveryMethod" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method status="PASS" signature="WebLoginCarLoan()[pri:0, instance:Test.day3@5bc79255]" name="WebLoginCarLoan" duration-ms="16" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method status="PASS" signature="AfterEveryMethod()[pri:0, instance:Test.day3@5bc79255]" name="AfterEveryMethod" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method status="PASS" signature="AFClass()[pri:0, instance:Test.day3@5bc79255]" name="AFClass" is-config="true" duration-ms="11" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AFClass -->
+      </class> <!-- Test.day3 -->
+    </test> <!-- Car Loan -->
+    <test name="Personal Loan" duration-ms="182" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+      <class name="Test.day1">
+        <test-method status="FAIL" signature="Demo()[pri:0, instance:Test.day1@71423665]" name="Demo" duration-ms="31" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at Test.day1.Demo(day1.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method status="PASS" signature="SecondDemo()[pri:0, instance:Test.day1@71423665]" name="SecondDemo" duration-ms="23" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondDemo -->
+        <test-method status="PASS" signature="LastExecution()[pri:0, instance:Test.day1@71423665]" name="LastExecution" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LastExecution -->
+      </class> <!-- Test.day1 -->
+      <class name="Test.day2">
+        <test-method status="PASS" signature="PreRequisite()[pri:0, instance:Test.day2@2ac273d3]" name="PreRequisite" is-config="true" duration-ms="1" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreRequisite -->
+        <test-method status="PASS" signature="PersonalLoan()[pri:0, instance:Test.day2@2ac273d3]" name="PersonalLoan" duration-ms="5" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalLoan -->
+      </class> <!-- Test.day2 -->
+    </test> <!-- Personal Loan -->
+    <test name="Home Loan" duration-ms="7" started-at="2019-10-12T14:01:33 PDT" finished-at="2019-10-12T14:01:33 PDT">
+      <class name="Test.day3">
+        <test-method status="PASS" signature="BfSuite()[pri:0, instance:Test.day3@5bc79255]" name="BfSuite" is-config="true" duration-ms="33" started-at="2019-10-12T14:01:32 PDT" finished-at="2019-10-12T14:01:32 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BfSuite -->
+        <test-method status="PASS" signature="AfSuite()[pri:0, instance:Test.day3@5bc79255]" name="AfSuite" is-config="true" duration-ms="0" started-at="2019-10-12T14:01:33 PDT" finished-at="2019-10-12T14:01:33 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfSuite -->
+      </class> <!-- Test.day3 -->
+      <class name="Test.day4">
+        <test-method status="PASS" signature="MobileLoginHomeLoan()[pri:0, instance:Test.day4@2b552920]" name="MobileLoginHomeLoan" duration-ms="2" started-at="2019-10-12T14:01:33 PDT" finished-at="2019-10-12T14:01:33 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginHomeLoan -->
+      </class> <!-- Test.day4 -->
+    </test> <!-- Home Loan -->
+  </suite> <!-- Suite -->
+</testng-results>
